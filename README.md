@@ -3,5 +3,6 @@ Landing page "Momentos" fictional event company. Made with HTML, CSS(Sass). Mobi
 
 Color palette: 
 - Primary color: #FFD700 - $priColor
-- Secondary color: 
-- Tertiary color:
+-----
+- Background primary color: #676517 
+- Background secondary color: #323232 
