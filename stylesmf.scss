@@ -102,18 +102,19 @@ header {
     display: flex;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 60px;
 
     p {
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-family: Raleway;
         padding: 10px 10px;
         text-shadow: 2px 2px black;
     }
 
     img {
-        height: 80px;
-        width: 80px;
+        height: 100px;
+        width: 100px;
     }
 }
 
