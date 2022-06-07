@@ -100,23 +100,19 @@ header {
     }
 }
 
-.hero-guarantee {
+.hero-phrase {
     display: flex;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 60px;
 
     p {
-        color: white;
+        color: blanchedalmond;
         font-size: 1.7rem;
         font-family: Raleway;
         padding: 10px 10px;
-        text-shadow: 2px 2px black;
-    }
-
-    img {
-        height: 100px;
-        width: 100px;
+        text-align: center;
+        text-shadow: 1px 1px black;
     }
 }
 
@@ -128,6 +124,7 @@ header {
     opacity: 0.8;
     background-image: radial-gradient(#676517 0.55px, #000000 0.55px);
     background-size: 11px 11px;
+    border-bottom: 2px solid $priColor;
 }
 
 .services-titles {
@@ -157,7 +154,7 @@ header {
 }
 
 .services-img {
-    padding: 0rem 2rem 0rem 2rem;
+    padding: 1rem 2rem 0rem 2rem;
     
     display: flex;
     justify-content: space-between;
@@ -173,5 +170,26 @@ header {
     img:hover {
         filter: invert(100%);
         transform: scaleX(-1);
+    }
+}
+
+.services-guarantee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+
+    p {
+        color: gray;
+        font-size: 1.7rem;
+        font-family: Raleway;
+        padding: 10px 10px;
+        // text-shadow: 1px 1px white;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
     }
 }
