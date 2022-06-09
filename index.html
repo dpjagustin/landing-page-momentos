@@ -1,77 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Landing page</title>
-    </head>
-    <body>
-        <header class="headerBox">
-            <img src="img/Logo.png" alt="Logo de la empresa" class="logoHeader">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/Logo.png">
+    <title>Momentos | Organización de eventos</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <img src="img/Logo.png" alt="Logo de la empresa. Antifaz de festival.">
 
-            <nav class="navFlex">
-                <ul class="listFlex">
-                    <li><a href="indexmf.html">Inicio</a></li>
-                    <li><a href="index.html#nuestrosServicios">Servicios</a></li>
-                    <li><a href="index.html#eventos">Eventos</a></li>
-                    <li><a href="index.html#contacto">Contacto </a></li>
-                </ul>
-            </nav>
-        </header>
+            <ul class="navbar-list">
+                <li><a href="index.html#services">Servicios</a></li>
+                <li><a href="index.html#events">Eventos</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+        </nav>
 
-        <main>
+        <div class="hero">
+            <div class="hero-title">
+                <h1>MOMENTOS</h1>
+                <p>Creando experiencias únicas</p>
+                <P>Para personas únicas.</P>
+            </div>
 
-        <div class="area1box" id="inicio">
-            <section class="section1">
-                <article class="article1">
-                    <h1>MOMENTOS</h1>
-                    <p>Creando experiencias únicas</p>
-                    <P>Para personas únicas.</P>
-                    <img src="img/Logo.png" alt="Logo de la empresa" width="150px">
-                </article>
+            <div class="hero-video">
+                <video src="videos/video1.mp4" id="videoArticle" autoplay loop></video>
+            </div>
 
-                <article class="article2">
-                    <video src="videos/video1.mp4" id="videoArticle" autoplay loop></video>
-                </article>
-            </section>
+            <div class="hero-phrase">
+                <p class="btn-shine">"Sabes que fue una buena fiesta cuando pierdes la noción del tiempo"</p>
+            </div>
+        </div>
+    </header>
+    <!-- Main - Sección servicios  -->
+    <main>
+        <div class="services-container" id="services">
+            <div class="services-titles">
+                <h2>NUESTROS SERVICIOS</h2>
+                <p>Armamos paquetes completos personalizados para que no tengas que preocuparte por nada al momento de organizar tu evento, tenemos todos los servicios que te imagines a tu disposición, desde catering, barra de bebidas, servicio de fotografía y videos, alquiler del salón, música en vivo, entre otros más.</p>
+            </div>
 
-            <section class="section2">
-                 <p> Nos caracterizamos por nuestro alto estándar de calidad al momento de realizar eventos de cualquier índole, haciendo <span id="inolvidable">inolvidable</span> cada detalle.<p>       
-            </section>
+            <div class="services-img">
+                <img src="img/catering_icon.png" alt="Icono del servicio de catering">
 
-            <section class="section3">
-                <p>Garantia</p>
-                
-                <img src="img/guarantee.png" alt="Icono de garantía asegurada" id="garantiaIcon">
+                <img src="img/band_icon.png" alt="Icono del servicio de banda musical">
+
+
+                <img src="img/dj_icon.png" alt="Icono del servicio de Disc Jockey">
+
+                <img src="img/drinks_icon.png" alt="Icono del servicio de bebidas">
+
+                <img src="img/photography_icon.png" alt="Icono del servicio de fotografía y video">
+            </div>
+
+            <div class="services-guarantee">
+                <p>Garantía</p>
+
+                <img src="img/guarantee.png" alt="Icono de garantía asegurada">
                 
                 <p>Asegurada</p>
-               
-            </section>
+            </div>
         </div>
-
-        <div class="area2box" id="nuestrosServicios">
-            <section class="section1_1" >
-                <h2>NUESTROS SERVICIOS</h2>
-                <p>Armamos paquetes completos personalizados para que no tengas que preocuparte por nada al momento de organizar tu evento, tenemos todos los servicios que te imagines a tu disposición, desde catering, barra de bebidas, servicio de fotografía y videos, alquiler del salón, música en vivo, entre otros servicios.</p>
-            </section>
-
-            
-            <img src="img/catering_icon.png" alt="Icono del servicio de catering">
-
-            <img src="img/band_icon.png" alt="Icono del servicio de banda musical">
-
-
-            <img src="img/dj_icon.png" alt="Icono del servicio de Disc Jockey">
-
-            <img src="img/drinks_icon.png" alt="Icono del servicio de bebidas">
-
-            <img src="img/photography_icon.png" alt="Icono del servicio de fotografía y video">
-        </div>
-
-        <div class="area3box" id="eventos">
-            <h2>EVENTOS</h2>
+        <!-- Sección eventos  -->
+        <div class="events-container" id="events">
+            <div class="events-titles">
+                <h2>EVENTOS</h2>
+            </div>
 
             <div class="container">
                 <div class="top">
@@ -91,8 +89,9 @@
                         <li><a href="#img_13"><img src="img/evento13.jpg"></a></li>
                         <li><a href="#img_14"><img src="img/evento14.jpg"></a></li>
                         <li><a href="#img_15"><img src="img/evento15.jpg"></a></li>
-                        <li><a href="#img_16"><img src="img/evento16.jpg"></a></li>
+                        <!-- <li><a href="#img_16"><img src="img/evento16.jpg"></a></li> -->
                     </ul>
+                    
                     <a href="#_1" class="lightbox trans" id="img_1"><img src="img/evento1.jpg"></a>
                     <a href="#_2" class="lightbox trans" id="img_2"><img src="img/evento2.jpg"></a>
                     <a href="#_3" class="lightbox trans" id="img_3"><img src="img/evento3.jpg"></a>
@@ -108,74 +107,55 @@
                     <a href="#_13" class="lightbox trans" id="img_13"><img src="img/evento13.jpg"></a>
                     <a href="#_14" class="lightbox trans" id="img_14"><img src="img/evento14.jpg"></a>
                     <a href="#_15" class="lightbox trans" id="img_15"><img src="img/evento15.jpg"></a>
-                    <a href="#_16" class="lightbox trans" id="img_16"><img src="img/evento16.jpg"></a>
+                    <!-- <a href="#_16" class="lightbox trans" id="img_16"><img src="img/evento16.jpg"></a> -->
                 </div>
             </div>
-
-            <div class="area4box" id="contacto">
-
+        </div>
+        <!-- Sección contacto  -->
+        <div class="contact-container" id="contact">
+            <div class="contact-titles">
                 <h2>CONTACTO</h2>
-
+            </div>   
             
-                <form action="" class="formContainer">
-                    <div class="formInput1">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" placeholder="Ingrese su nombre">
-                    </div>
+            <form class="form">
+                <h2>CONTACTANOS</h2>
 
-                    <div class="formInput2">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" placeholder="Ingrese su apellido">
-                    </div>
+                <p type="Nombre:"><input placeholder="Escribe tu nombre aquí"></input></p>
 
-                    <div class="formInput3">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" placeholder="Ingrese su email">
-                    </div>
+                <p type="Email:"><input placeholder="Donde recibiras la respuesta"></input></p>
 
-                    <div class="formInput4">
-                        <label for="consulta">Escriba su consulta</label>
-                        <textarea name="" id="consulta" cols="50" rows="14">Escriba aquí su duda o consulta, estaremos respondiéndole lo antes posible...</textarea>
+                <p type="Mensaje:"><input placeholder="Cuéntanos que es lo que quieres..."></input></p>
 
-                        <button id="botonEnviar">ENVIAR</button>
-                    </div>
+                <button>Enviar mensaje</button>
 
-                </form>
-                
+                <!-- <div>
+                  <span class="fa fa-phone"></span>001 1023 567
+                  <span class="fa fa-envelope-o"></span> contact@company.com
+                </div> -->
+            </form>
+        </div>
+    </main>
 
+    <footer class="footer">
+        <div class="footer-media">
+            <h2>NUESTRAS REDES</h2>
+
+            <div class="media-img">
+                <img src="img/twitter_icon.png" alt="Logo de twitter">
+                <img src="img/linkedin_icon.png" alt="Logo de LinkedIn">
+                <img src="img/instagram_icon.png" alt="Logo de Instagram">
+                <img src="img/facebook_icon.png" alt="Logo de Facebook">
             </div>
-
         </div>
 
-        </main>
+        <div class="footer-copyright">
+            <p>MOMENTOS | ORGANIZACIÓN DE EVENTOS</p>
+            <p>Todos los derechos reservados</p>
+        </div>
 
-        <footer class="footerBox">
-            <div class="footerSection1">
-                <h2>¡Seguinos en nuestras redes!</h2>
-                
-                <div class="redesSociales">
-                    <img src="img/twitter_icon.png" alt="Logo de twitter">
-                    <img src="img/linkedin_icon.png" alt="Logo de LinkedIn">
-                    <img src="img/instagram_icon.png" alt="Logo de Instagram">
-                    <img src="img/facebook_icon.png" alt="Logo de Facebook">
-                </div>
-
-            </div>
-
-            <div class="footerSection2">
-                <p>MOMENTOS | ORGANIZACIÓN DE EVENTOS</p>
-                <p>Todos los derechos reservados</p>
-
-            </div>
-
-            <div class="footerSection3">
-                <iframe width="520" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Gabriela%20Mistral%202554%20C%C3%B3rdoba+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.acadoo.es/'>Acadoo.es</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d6369b31f949847668e2e463ca52396b0f2da0f2'></script>
-            </div>
-
-
-        </footer>    
-        
-        
-
-    </body>
+        <div class="footer-map">
+            <iframe class="map" width="520" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Gabriela%20Mistral%202554%20C%C3%B3rdoba+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.acadoo.es/'>Acadoo.es</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d6369b31f949847668e2e463ca52396b0f2da0f2'></script>
+        </div>
+    </footer>
+</body>
 </html>

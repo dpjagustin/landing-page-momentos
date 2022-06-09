@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   width: 100%;
   border-bottom: 2px solid #FFD700;
@@ -394,11 +398,13 @@ header {
 }
 
 .contact-container {
+  height: 80vh;
   width: 100%;
   background-color: #323232;
   opacity: 1;
   background: radial-gradient(circle, transparent 20%, #323232 20%, #323232 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #323232 20%, #323232 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#676517 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #676517 2px, #323232 2px) -1px 0;
   background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+  border-bottom: 2px solid #FFD700;
 }
 
 .contact-titles {
@@ -419,5 +425,177 @@ header {
   font-weight: 400;
   color: #FFD700;
   text-shadow: 1px 1px white;
+}
+
+.form {
+  width: 80%;
+  height: 50vh;
+  background: #e6e6e6;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 40px -10px #000;
+          box-shadow: 0 0 40px -10px #000;
+  margin: calc(40vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+
+.form input:focus {
+  border-bottom: 2px solid #78788c;
+}
+
+.form p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.form button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.form button:hover {
+  background: #78788c;
+  color: #fff;
+}
+
+.form div {
+  content: "Hi";
+  bottom: -5px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  -webkit-box-shadow: 10px 10px 40px -14px #000;
+          box-shadow: 10px 10px 40px -14px #000;
+}
+
+.form span {
+  margin: 0 5px 0 15px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #000;
+}
+
+.footer-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-media h2 {
+  padding-top: 1.2rem;
+  font-family: Raleway;
+  font-weight: 400;
+  color: white;
+  text-shadow: 1px 1px #FFD700;
+}
+
+.media-img {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1.2rem;
+}
+
+.media-img img {
+  height: 45px;
+}
+
+.footer-copyright {
+  padding: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-copyright p {
+  color: gray;
+  opacity: 50%;
+  font-size: 1rem;
+}
+
+.footer-map {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.map {
+  width: 350px;
+  height: 250px;
 }
 /*# sourceMappingURL=stylesmf.css.map */
