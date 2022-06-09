@@ -202,6 +202,8 @@ header {
     opacity: 1;
     background-image: linear-gradient(0deg, #323232 50%, #676517 50%);
     background-size: 10px 10px;
+    border-bottom: 2px solid $priColor;
+
 }
 
 .events-titles {
@@ -220,12 +222,10 @@ header {
         }
 }
 
-/* Gallery image */
-
 .container
 {
 	width: 100%;
-	height: 100%;
+	height: 55vh;
 }
 .trans
 {
@@ -340,4 +340,30 @@ header {
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
+}
+
+// Sección contacto 
+
+.contact-container {
+    width: 100%;
+    background-color: #323232;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #323232 20%, #323232 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #323232 20%, #323232 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#676517 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #676517 2px, #323232 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+
+.contact-titles {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+        h2 {
+            padding: 1.5rem;
+            padding-bottom: 0px;
+            font-size: 2.5rem;
+            font-family: Raleway;
+            font-weight: 400;
+            color: $priColor;
+            text-shadow: 1px 1px white;
+        }
 }
