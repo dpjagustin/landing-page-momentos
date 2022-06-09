@@ -70,6 +70,7 @@ header {
   color: black;
   -webkit-transition: ease-in .4s;
   transition: ease-in .4s;
+  cursor: pointer;
 }
 
 .hero {
