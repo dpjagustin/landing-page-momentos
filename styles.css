@@ -61,6 +61,15 @@ header {
   text-shadow: 2px 2px black;
   color: #fff;
   text-shadow: 0 0 10px black;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.navbar-list li a:hover {
+  background-color: #FFD700;
+  color: black;
+  -webkit-transition: ease-in .4s;
+  transition: ease-in .4s;
 }
 
 .hero {
@@ -429,7 +438,7 @@ header {
 
 .form {
   width: 80%;
-  height: 50vh;
+  height: 70%;
   background: #e6e6e6;
   border-radius: 8px;
   -webkit-box-shadow: 0 0 40px -10px #000;
@@ -515,6 +524,8 @@ header {
 
 .footer {
   width: 100%;
+  bottom: 0;
+  position: relative;
   background-color: #000;
 }
 
@@ -597,5 +608,121 @@ header {
 .map {
   width: 350px;
   height: 250px;
+}
+
+@media (max-width: 375px) {
+  .hero-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+  }
+  .hero-title h1 {
+    font-size: 3rem;
+    font-family: Monoton;
+    font-weight: 200;
+    color: #FFD700;
+    text-shadow: 2px px black;
+  }
+  .hero-title p {
+    font-size: 1.5rem;
+    font-family: Raleway;
+  }
+  .hero-video video {
+    width: 310px;
+    padding: 0px;
+    border: 7px  goldenrod;
+    border-style: groove;
+    -webkit-box-shadow: 0 0 10px white;
+            box-shadow: 0 0 10px white;
+  }
+  .services-guarantee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+  .services-guarantee p {
+    color: gray;
+    font-size: 1.3rem;
+    font-family: Raleway;
+    padding: 10px 10px;
+  }
+  .map {
+    width: 300px;
+    height: 220px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 60%;
+        grid-template-columns: 30% 60%;
+    border-bottom: 2px solid #FFD700;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+  .footer {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    background-color: #000;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+    -ms-grid-rows: 70% 30%;
+        grid-template-rows: 70% 30%;
+        grid-template-areas: "media map" "copyright copyright";
+  }
+  .footer-media {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: media;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer-copyright {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: copyright;
+  }
+  .footer-map {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: map;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
