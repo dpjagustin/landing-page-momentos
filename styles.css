@@ -408,6 +408,7 @@ header {
 }
 
 .contact-container {
+  height: 90vh;
   width: 100%;
   background-color: #323232;
   opacity: 1;
@@ -437,6 +438,7 @@ header {
 
 .form {
   width: 80%;
+  height: 70%;
   background: #e6e6e6;
   border-radius: 8px;
   -webkit-box-shadow: 0 0 40px -10px #000;
