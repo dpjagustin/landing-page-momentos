@@ -357,7 +357,8 @@ header {
 // Sección contacto 
 
 .contact-container {
-    height: 90vh;
+    // height: 90vh;
+    clear:both;
     width: 100%;
     background-color: #323232;
     opacity: 1;
@@ -386,6 +387,7 @@ header {
     // https://codepen.io/leenalavanya/pen/mPWdPZ
     width: 80%;
     height: 70%;
+    clear:both;
     background: #e6e6e6;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
