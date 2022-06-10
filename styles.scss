@@ -367,13 +367,14 @@ header {
 }
 
 .contact-titles {
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
     
         h2 {
             padding: 1.5rem;
-            padding-bottom: 0px;
+            // padding-bottom: 0px;
             font-size: 2.5rem;
             font-family: Raleway;
             font-weight: 400;
