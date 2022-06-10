@@ -357,8 +357,8 @@ header {
 // Sección contacto 
 
 .contact-container {
-    // height: 90vh;
-    clear:both;
+    height: 80vh;
+    // clear:both;
     width: 100%;
     background-color: #323232;
     opacity: 1;
@@ -384,7 +384,7 @@ header {
 }
 
 .form {
-    // https://codepen.io/leenalavanya/pen/mPWdPZ
+    // https://codepen.io/leenalavanya/pen/mPWdP
     width: 80%;
     height: 70%;
     clear:both;
@@ -449,22 +449,22 @@ header {
 }
   
   
-.form div {
-    content: "Hi";
-    bottom: -5px;
-    right: -20px;
-    background: #50505a;
-    color: #fff;
-    width: 320px;
-    padding: 16px 4px 16px 0;
-    border-radius: 6px;
-    font-size: 13px;
-    box-shadow: 10px 10px 40px -14px #000;
-  }
+// .form div {
+//     content: "Hi";
+//     bottom: -5px;
+//     right: -20px;
+//     background: #50505a;
+//     color: #fff;
+//     width: 320px;
+//     padding: 16px 4px 16px 0;
+//     border-radius: 6px;
+//     font-size: 13px;
+//     box-shadow: 10px 10px 40px -14px #000;
+//   }
   
-.form span {
-    margin: 0 5px 0 15px;
-}
+// .form span {
+//     margin: 0 5px 0 15px;
+// }
 
 // Footer
 
