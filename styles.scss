@@ -357,7 +357,7 @@ header {
 // Sección contacto 
 
 .contact-container {
-    height: 80vh;
+    // height: 80vh;
     width: 100%;
     background-color: #323232;
     opacity: 1;
@@ -460,9 +460,9 @@ header {
     box-shadow: 10px 10px 40px -14px #000;
   }
   
-  .form span {
+.form span {
     margin: 0 5px 0 15px;
-  }
+}
 
 // Footer
 
@@ -599,7 +599,6 @@ header {
     
     .footer {
         width: 100%;
-        bottom: 0;
         background-color: #000;
         display: grid;
         grid-template-columns: 40% 60%;

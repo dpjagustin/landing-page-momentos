@@ -408,7 +408,6 @@ header {
 }
 
 .contact-container {
-  height: 80vh;
   width: 100%;
   background-color: #323232;
   opacity: 1;
@@ -695,7 +694,6 @@ header {
   }
   .footer {
     width: 100%;
-    bottom: 0;
     background-color: #000;
     display: -ms-grid;
     display: grid;
