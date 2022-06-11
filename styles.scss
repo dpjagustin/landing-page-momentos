@@ -357,7 +357,7 @@ header {
 // Sección contacto 
 
 .contact-container {
-    height: 80vh;
+    height: 100vh;
     // clear:both;
     width: 100%;
     background-color: #323232;
@@ -487,6 +487,15 @@ header {
         color: white;
         text-shadow: 1px 1px $priColor;
     }
+
+    P {
+        padding-top: 0.4rem;
+        padding-bottom: 0.7rem;
+        font-family: Raleway;
+        font-weight: 400;
+        color: white;
+        text-shadow: 1px 1px $priColor;
+    }
 }
 
 .media-img {
@@ -582,6 +591,14 @@ header {
         width: 300px;
         height: 220px;
     }
+
+    .footer-copyright {
+        p{ 
+          color: gray;
+          opacity: 50%;
+          font-size: 0.8rem
+        }
+  }
 }
 
 @media (min-width:768px) {
@@ -601,6 +618,7 @@ header {
     
     .footer {
         width: 100%;
+        height: 400px;
         background-color: #000;
         display: grid;
         grid-template-columns: 40% 60%;
@@ -623,4 +641,37 @@ header {
     .footer-map {
         grid-area: map;
     }
+
+    .map {
+        padding-top:1.2rem;
+        width: 400px;
+        height: 220px;
+    }
 }
+
+@media (min-width:1024px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 15% 35% 45%;
+        grid-template-areas: 
+        "logo none navbar";
+        border-bottom: 2px solid $priColor;
+        align-items: center;
+    }
+
+    .navbar-list {
+        grid-area: navbar;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 400px;
+        background-color: #000;
+    }
+}
+

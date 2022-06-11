@@ -408,7 +408,7 @@ header {
 }
 
 .contact-container {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   background-color: #323232;
   opacity: 1;
@@ -527,6 +527,15 @@ header {
 
 .footer-media h2 {
   padding-top: 1.2rem;
+  font-family: Raleway;
+  font-weight: 400;
+  color: white;
+  text-shadow: 1px 1px #FFD700;
+}
+
+.footer-media P {
+  padding-top: 0.4rem;
+  padding-bottom: 0.7rem;
   font-family: Raleway;
   font-weight: 400;
   color: white;
@@ -652,6 +661,11 @@ header {
     width: 300px;
     height: 220px;
   }
+  .footer-copyright p {
+    color: gray;
+    opacity: 50%;
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -677,6 +691,7 @@ header {
   }
   .footer {
     width: 100%;
+    height: 400px;
     background-color: #000;
     display: -ms-grid;
     display: grid;
@@ -704,6 +719,44 @@ header {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: map;
+  }
+  .map {
+    padding-top: 1.2rem;
+    width: 400px;
+    height: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 15% 35% 45%;
+        grid-template-columns: 15% 35% 45%;
+        grid-template-areas: "logo none navbar";
+    border-bottom: 2px solid #FFD700;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-list {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: navbar;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #000;
   }
 }
 /*# sourceMappingURL=styles.css.map */
