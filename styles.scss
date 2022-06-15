@@ -133,6 +133,7 @@ header {
 
 .services-container {
     width: 100%;
+    // height: 100vh;
     background-color: #000000;
     opacity: 0.8;
     background-image: radial-gradient(#676517 0.55px, #000000 0.55px);
@@ -207,6 +208,10 @@ header {
     }
 }
 
+.dj {
+    display: none;
+}
+
 // Sección Eventos
 
 .events-container {
@@ -234,21 +239,20 @@ header {
         }
 }
 
-.container
-{
+.container {
 	width: 100%;
 	height: 55vh;
 }
-.trans
-{
+
+.trans {
 	transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-ms-transition: all 1s ease;
 	-o-transition: all 1s ease;
 	-webkit-transition: all 1s ease;
 }
-.top
-{
+
+.top {
 	display: flex;
 	width: 90vw;
 	height: 80vh;
@@ -385,14 +389,15 @@ header {
 
 .form {
     // https://codepen.io/leenalavanya/pen/mPWdP
+    position: relative;
     width: 80%;
     height: 70%;
     background: #e6e6e6;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
-    margin: calc(40vh - 220px) auto;
+    // margin: calc(40vh - 220px) auto;
     padding: 20px 30px;
-    max-width: calc(100vw - 40px);
+    // max-width: calc(100vw - 40px);
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 
@@ -676,6 +681,89 @@ header {
 }
 
 @media (min-width:1440px) {
+    .services-box {
+        margin-top: 3%;
+        height: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,33%);
+        grid-template-areas: 
+        "1 dj"
+        "2 dj"
+        "3 dj";
+    
+        p {
+            grid-area: 1;
+            padding: 1.5rem;
+            color: white;
+            font-size: 1.7rem;
+            font-family: Raleway;
+            text-shadow: 2px 2px black;
+        }
+    }
+
+    .services-titles{
+        p{
+            display: none;
+        }
+    }
+    
+    .services-img {
+        grid-area: 3;
+        padding: 1rem 2rem 0rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    
+        img {
+            height: 60px;
+            width: 60px;
+        }
+    
+        img:hover {
+            filter: invert(100%);
+            transform: scaleX(-1);
+        }
+    }
+    
+    .services-guarantee {
+        grid-area: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    
+        p {
+            color: gray;
+            font-size: 1.7rem;
+            font-family: Raleway;
+            padding: 10px 10px;
+            // text-shadow: 1px 1px white;
+        }
+    
+        img {
+            height: 100px;
+            width: 100px;
+        }
+    }
+    
+    .dj {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start ;
+        grid-area: dj;
+    
+        img{
+            border-radius: 80%;
+            height: 95%;
+            width: 100%;
+            opacity: 30%;
+        }
+    }
+
     .container {
         width: 100%;
         height: 100vh;
