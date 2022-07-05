@@ -16,6 +16,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 // Header
 
 header {
@@ -134,10 +135,10 @@ header {
 .services-container {
     width: 100%;
     // height: 100vh;
-    background-color: #000000;
-    opacity: 0.8;
-    background-image: radial-gradient(#676517 0.55px, #000000 0.55px);
-    background-size: 11px 11px;
+    background-color: white;
+    // opacity: 0.8;
+    // background-size: 10px 10px;
+    // background-image: repeating-linear-gradient(45deg, #323232 0, #323232 1px, #676517 0, #676517 50%);
     border-bottom: 2px solid $priColor;
 }
 
@@ -217,10 +218,10 @@ header {
 
 .events-container {
     width: 100%;
-    background-color: #323232;
-    opacity: 1;
-    background-image: linear-gradient(0deg, #323232 50%, #676517 50%);
-    background-size: 10px 10px;
+    background-color: white;
+    // opacity: 1;
+    // background-image: radial-gradient(#676517 0.55px, #000000 0.55px);
+    // background-size: 11px 11px;
     border-bottom: 2px solid $priColor;
 }
 
@@ -369,10 +370,10 @@ header {
     // height: 100vh;
     // clear:both;
     width: 100%;
-    background-color: #323232;
-    opacity: 1;
-    background: radial-gradient(circle, transparent 20%, #323232 20%, #323232 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #323232 20%, #323232 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#676517 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #676517 2px, #323232 2px) -1px 0;
-    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+    // background-color: #323232;
+    // opacity: 1;
+    // background-image: radial-gradient(#676517 0.55px, #000000 0.55px);
+    // background-size: 11px 11px;
     border-bottom: 2px solid $priColor;
 }
 
@@ -407,8 +408,8 @@ header {
     box-shadow: 0 0 10px black;
     background-color: #676517;
     // opacity: 1;
-    background-image: radial-gradient(circle at center center, #323232, #676517), repeating-radial-gradient(circle at center center, #323232, #323232, 10px, transparent 20px, transparent 10px);
-    background-blend-mode: multiply;
+    // background-image: radial-gradient(circle at center center, #323232, #676517), repeating-radial-gradient(circle at center center, #323232, #323232, 10px, transparent 20px, transparent 10px);
+    // background-blend-mode: multiply;
 
     div {
         width: 100%;

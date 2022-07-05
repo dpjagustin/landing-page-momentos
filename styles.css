@@ -159,10 +159,7 @@ header {
 
 .services-container {
   width: 100%;
-  background-color: #000000;
-  opacity: 0.8;
-  background-image: radial-gradient(#676517 0.55px, #000000 0.55px);
-  background-size: 11px 11px;
+  background-color: white;
   border-bottom: 2px solid #FFD700;
 }
 
@@ -261,11 +258,7 @@ header {
 
 .events-container {
   width: 100%;
-  background-color: #323232;
-  opacity: 1;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #323232), color-stop(50%, #676517));
-  background-image: linear-gradient(0deg, #323232 50%, #676517 50%);
-  background-size: 10px 10px;
+  background-color: white;
   border-bottom: 2px solid #FFD700;
 }
 
@@ -424,10 +417,6 @@ header {
           align-items: center;
   padding-bottom: 5rem;
   width: 100%;
-  background-color: #323232;
-  opacity: 1;
-  background: radial-gradient(circle, transparent 20%, #323232 20%, #323232 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #323232 20%, #323232 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#676517 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #676517 2px, #323232 2px) -1px 0;
-  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
   border-bottom: 2px solid #FFD700;
 }
 
@@ -476,8 +465,6 @@ header {
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black;
   background-color: #676517;
-  background-image: radial-gradient(circle at center center, #323232, #676517), repeating-radial-gradient(circle at center center, #323232, #323232, 10px, transparent 20px, transparent 10px);
-  background-blend-mode: multiply;
 }
 
 .form div {
