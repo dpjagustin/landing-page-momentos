@@ -154,10 +154,12 @@ header {
         padding: 1.5rem;
         padding-bottom: 0px;
         font-size: 2.2rem;
-        font-family: Raleway;
-        font-weight: 400;
+        font-family: Monoton;
+        font-weight: 100;
         color: $priColor;
-        text-shadow: 1px 1px white;
+        text-shadow: 1px 1px black;
+        text-align: center;
+        // letter-spacing: 0.3rem;
     }
 
     p {
@@ -166,6 +168,7 @@ header {
         font-size: 1.2rem;
         font-family: Raleway;
         text-shadow: 2px 2px black;
+        text-align: center;
     }
 }
 
@@ -233,11 +236,11 @@ header {
         h2 {
             padding: 1.5rem;
             padding-bottom: 0px;
-            font-size: 2.5rem;
-            font-family: Raleway;
-            font-weight: 400;
+            font-size: 2.2rem;
+            font-family: Monoton;
+            font-weight: 100;
             color: $priColor;
-            text-shadow: 1px 1px white;
+            text-shadow: 1px 1px black;
         }
 }
 
@@ -258,10 +261,10 @@ header {
 	display: flex;
 	width: 90vw;
 	height: 80vh;
-	margin-top: 10vh;
+	margin-top: 3vh;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10vh;
+	margin-bottom: 5vh;
 }
 .top ul
 {
@@ -384,12 +387,11 @@ header {
     
         h2 {
             padding: 1.5rem;
-            // padding-bottom: 0px;
-            font-size: 2.5rem;
-            font-family: Raleway;
-            font-weight: 400;
+            font-size: 2.2rem;
+            font-family: Monoton;
+            font-weight: 100;
             color: $priColor;
-            text-shadow: 1px 1px white;
+            text-shadow: 1px 1px black;
         }
 }
 
@@ -399,70 +401,86 @@ header {
     justify-content: center;
 }
 
-.form {
-    border-radius: 10%;
-    width: 80vw;
+.contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0 10px black;
-    background-color: #676517;
-    
-    div {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+
+    h4 {
         text-align: center;
-        align-items: center;
-        padding: 0.5rem;
-
-        input {
-            border-radius: 5rem;
-            height: 2rem;
-            width: 80%;
-            background-color: none;
-            border: none;
-            border: #FFD700 1px solid;
-        }
-
-        textarea {
-            width: 80%;
-            border: none;
-            border-radius: 5%;
-            margin-bottom: 1rem;
-            border: #FFD700 1px solid;
-        }
-
-        label {
-            font-family: Raleway;
-            padding-bottom: 0.4rem;
-            font-size: 1.5rem;
-            color: white;
-            text-shadow: 1px 1px $priColor;
-        }
-    }
-
-    button {
-        cursor: pointer;
-        padding: 10px 20px;
-        margin-bottom: 1rem;
-        border-radius: 3rem;
-        border: none;
-        font-family: Raleway;
-        font-size: 1.2rem;
-        color: black;
-        font-weight: 600;
-        text-shadow: 1px 1px white;
-        background-color: $priColor;
-    }
-
-    button:hover {
-        background-color: #14213d;
-        box-shadow: none;
-        color: #fff;
-        text-shadow: 1px 1px $priColor;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
     }
 }
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 0;
+    overflow: hidden;
+  
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        transparent,
+        var(--primary-color),
+        transparent
+      );
+      transform: translateX(-100%);
+      transition: 0.6s;
+    }
+  
+    &:hover {
+      background: transparent;
+      box-shadow: 0 0 20px 10px hsla(204, 70%, 53%, 0.5);
+  
+      &::before {
+        transform: translateX(100%);
+      }
+    }
+  }
+  
+  .form-input-material {
+    --input-default-border-color: white;
+    --input-border-bottom-color: white;
+    
+    input {
+      color: white;
+    }
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
+      0 1px 1px rgba(128, 128, 128, 0.155),
+      0 2.1px 2.1px rgba(128, 128, 128, 0.195),
+      0 4.4px 4.4px rgba(128, 128, 128, 0.241),
+      0 12px 12px rgba(128, 128, 128, 0.35);
+  
+    h1 {
+      margin: 0 0 24px 0;
+    }
+  
+    .form-input-material {
+      margin: 12px 0;
+    }
+  
+    .btn {
+      width: 100%;
+      margin: 18px 0 9px 0;
+    }
+  }
 
 // Footer
 

@@ -41,10 +41,11 @@
         <!-- Sección servicios  -->
         <div class="services-container" id="services">
             <div class="services-titles">
-                <h2>NUESTROS SERVICIOS</h2>
+                <h2>NUESTROS  SERVICIOS</h2>
                 <p id="#services-description">Armamos paquetes completos personalizados para que no tengas que preocuparte por nada al momento de organizar tu evento, tenemos todos los servicios que te imagines a tu disposición, desde catering, barra de bebidas, servicio de fotografía y videos, alquiler del salón, música en vivo, entre otros más.</p>
             </div>
 
+            <!-- Poner un icon carrusel con los servicios  -->
             <div class="services-box">
                 <!-- <p id="services-description2">Armamos paquetes completos personalizados para que no tengas que preocuparte por nada al momento de organizar tu evento, tenemos todos los servicios que te imagines a tu disposición, desde catering, barra de bebidas, servicio de fotografía y videos, alquiler del salón, música en vivo, entre otros más.</p> -->
 
@@ -126,26 +127,19 @@
                 <h2>CONTACTO</h2>
             </div>
             
-            <div class="contact-box">
-                <form class="form">
-                    <div>
-                        <label for="name">Nombre:</label>
-                        <input type="text" placeholder=" Ingrese su nombre" id="name">
-                    </div>
-    
-                    <div>
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" placeholder=" ejemplo@mail.com" id="email">
-                    </div>
-    
-                    <div>
-                        <label for="textarea">¡Contanos tu idea!</label>
-                        <textarea name="" id="" cols="30" rows="10" placeholder=" Me gustaría realizar un evento empresarial con estos servicios..."></textarea>
-                    </div>
-    
-                    <button>ENVIAR</button>
-                </form>
-            </div>
+            <!-- Cambiar form  -->
+            <form class="login-form" action="javascript:void(0);">
+                <h1>Login</h1>
+                <div class="form-input-material">
+                  <input type="text" name="username" id="username" placeholder=" " autocomplete="off" class="form-control-material" required />
+                  <label for="username">Username</label>
+                </div>
+                <div class="form-input-material">
+                  <input type="password" name="password" id="password" placeholder=" " autocomplete="off" class="form-control-material" required />
+                  <label for="password">Password</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-ghost">Login</button>
+              </form>
         </div>
     </main>
     
