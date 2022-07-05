@@ -3,6 +3,7 @@
 // Variables
  
 $priColor: #FFD700;
+$secColor: #323232; 
 
 // General 
 
@@ -14,25 +15,18 @@ $priColor: #FFD700;
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	// height: 100vh;
-}
+    background-color: #323232;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #323232 9px ), repeating-linear-gradient( #67651755, #676517 );
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    // background: linear-gradient(-45deg, #676517 , #323232 , #23a6d5, #23d5ab);
+	// background-size: 400% 400%;
+	// animation: gradient 15s ease infinite;
+	// // height: 100vh;
 }
 
 
@@ -383,14 +377,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding-bottom: 5rem;
-    // height: 100vh;
-    // clear:both;
     width: 100%;
-    // background-color: #323232;
-    // opacity: 1;
-    // background-image: radial-gradient(#676517 0.55px, #000000 0.55px);
-    // background-size: 11px 11px;
-    // border-bottom: 2px solid $priColor;
 }
 
 .contact-titles {
@@ -408,92 +395,66 @@ header {
         }
 }
 
-.contact-box {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.contact-form {
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50vw;
+    margin: 0rem 2rem;
 
-    h4 {
+    h4{
+        width: 100%;
+        color: #fff;
         text-align: center;
-        font-size: 2.5rem;
-        margin-bottom: 20px;
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    input{
+        padding: 10px 20px;
+        margin-bottom: 1em;
+        background: none;
+        color: black;
+        border: 1px solid $priColor;
+    }
+
+    textarea {
+        height: 150px;
+        max-height: 250px;
+        width: 300px;
+        max-width: 340px;
+        background: none;
+        color: white;
+        padding-left: 0.2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 1px solid $priColor;
     }
 }
 
-.btn {
-    padding: 8px 20px;
-    border-radius: 0;
-    overflow: hidden;
-  
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        120deg,
-        transparent,
-        var(--primary-color),
-        transparent
-      );
-      transform: translateX(-100%);
-      transition: 0.6s;
-    }
-  
-    &:hover {
-      background: transparent;
-      box-shadow: 0 0 20px 10px hsla(204, 70%, 53%, 0.5);
-  
-      &::before {
-        transform: translateX(100%);
-      }
-    }
-  }
-  
-  .form-input-material {
-    --input-default-border-color: white;
-    --input-border-bottom-color: white;
-    
-    input {
-      color: white;
-    }
-  }
-  
-  .login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 40px;
+.btn-submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    background-color: $priColor;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px 5px #323232;
+}
+
+.btn-submit:hover {
+    background-color: $secColor;
     color: white;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
-      0 1px 1px rgba(128, 128, 128, 0.155),
-      0 2.1px 2.1px rgba(128, 128, 128, 0.195),
-      0 4.4px 4.4px rgba(128, 128, 128, 0.241),
-      0 12px 12px rgba(128, 128, 128, 0.35);
-  
-    h1 {
-      margin: 0 0 24px 0;
-    }
-  
-    .form-input-material {
-      margin: 12px 0;
-    }
-  
-    .btn {
-      width: 100%;
-      margin: 18px 0 9px 0;
-    }
-  }
+    box-shadow: 1px 3px 11px 5px $priColor;
+}
+
+
+
+
 
 // Footer
 
