@@ -10,9 +10,13 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #000000;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000 11px), repeating-linear-gradient(#67651755, #676517);
+}
+
 header {
   width: 100%;
-  border-bottom: 2px solid #FFD700;
 }
 
 .navbar {
@@ -89,9 +93,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #000000;
-  opacity: 0.8;
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000 11px), repeating-linear-gradient(#67651755, #676517);
 }
 
 .hero-title {
@@ -159,8 +160,6 @@ header {
 
 .services-container {
   width: 100%;
-  background-color: white;
-  border-bottom: 2px solid #FFD700;
 }
 
 .services-titles {
@@ -258,8 +257,6 @@ header {
 
 .events-container {
   width: 100%;
-  background-color: white;
-  border-bottom: 2px solid #FFD700;
 }
 
 .events-titles {
@@ -417,7 +414,6 @@ header {
           align-items: center;
   padding-bottom: 5rem;
   width: 100%;
-  border-bottom: 2px solid #FFD700;
 }
 
 .contact-titles {
@@ -535,6 +531,7 @@ header {
   bottom: 0;
   width: 100%;
   background-color: #000;
+  border-top: 2px solid #FFD700;
 }
 
 .footer-media {

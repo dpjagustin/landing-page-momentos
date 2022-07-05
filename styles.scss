@@ -16,12 +16,17 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #000000;
+    // opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 11px ), repeating-linear-gradient( #67651755, #676517 );
+}
+
 
 // Header
 
 header {
     width: 100%;
-    border-bottom: 2px solid $priColor;
 }
 
 .navbar {
@@ -75,9 +80,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #000000;
-    opacity: 0.8;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 11px ), repeating-linear-gradient( #67651755, #676517 );
 }
 
 .hero-title {
@@ -135,11 +137,10 @@ header {
 .services-container {
     width: 100%;
     // height: 100vh;
-    background-color: white;
+    // background-color: white;
     // opacity: 0.8;
     // background-size: 10px 10px;
     // background-image: repeating-linear-gradient(45deg, #323232 0, #323232 1px, #676517 0, #676517 50%);
-    border-bottom: 2px solid $priColor;
 }
 
 .services-titles {
@@ -218,11 +219,10 @@ header {
 
 .events-container {
     width: 100%;
-    background-color: white;
+    // background-color: white;
     // opacity: 1;
     // background-image: radial-gradient(#676517 0.55px, #000000 0.55px);
     // background-size: 11px 11px;
-    border-bottom: 2px solid $priColor;
 }
 
 .events-titles {
@@ -374,7 +374,7 @@ header {
     // opacity: 1;
     // background-image: radial-gradient(#676517 0.55px, #000000 0.55px);
     // background-size: 11px 11px;
-    border-bottom: 2px solid $priColor;
+    // border-bottom: 2px solid $priColor;
 }
 
 .contact-titles {
@@ -407,10 +407,7 @@ header {
     align-items: center;
     box-shadow: 0 0 10px black;
     background-color: #676517;
-    // opacity: 1;
-    // background-image: radial-gradient(circle at center center, #323232, #676517), repeating-radial-gradient(circle at center center, #323232, #323232, 10px, transparent 20px, transparent 10px);
-    // background-blend-mode: multiply;
-
+    
     div {
         width: 100%;
         display: flex;
@@ -474,6 +471,8 @@ header {
     bottom: 0;
     width: 100%;
     background-color: #000;
+    border-top: 2px solid $priColor;
+
 }
   
 .footer-media {
